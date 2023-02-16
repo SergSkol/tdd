@@ -8,5 +8,10 @@ describe Solver do
       result = sol.factorial(0)
       expect(result).to eql(1)
     end
+
+    it 'in case of 5 expect 120' do
+      result = sol.factorial(5)
+      expect(result).to eql(120)
+    end
   end
 end
