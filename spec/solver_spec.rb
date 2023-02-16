@@ -14,4 +14,10 @@ describe Solver do
       expect(result).to eql(120)
     end
   end
+  context 'test reverse method' do
+    it 'in case of hello expect olleh' do
+      result = sol.reverse('hello')
+      expect(result).to eql('olleh')
+    end
+  end
 end
