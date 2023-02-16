@@ -1,21 +1,23 @@
 class Solver
   def factorial(number)
-    raise "Wrong Input" if number<0
-    return 1 if number==0
+    raise 'Wrong Input' if number.negative?
+    return 1 if number.zero?
+
     result = 1
-    for i in 1..number do
-      result = result * i
+    (1..number).each do |i|
+      result *= i
     end
     result
   end
+
   def reverse(word)
-    result = ""
+    result = ''
     len = word.length
     i = len
-    while i>0 do
-      i = i-1
-      result = result + word[i]
+    while i.positive?
+      i -= 1
+      result += word[i]
     end
     result
   end
-end 
+end
