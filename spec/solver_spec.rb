@@ -29,7 +29,7 @@ describe Solver do
       result = sol.fizzbuzz(5)
       expect(result).to eql('buzz')
     end
-    it 'in case of 15 expect fizzbuzz' do 
+    it 'in case of 15 expect fizzbuzz' do
       result = sol.fizzbuzz(15)
       expect(result).to eql('fizzbuzz')
     end
