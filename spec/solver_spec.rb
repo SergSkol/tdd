@@ -20,4 +20,22 @@ describe Solver do
       expect(result).to eql('olleh')
     end
   end
+  context 'fizzbuzz method' do
+    it 'in case of 3 expect fizz' do
+      result = sol.fizzbuzz(3)
+      expect(result).to eql('fizz')
+    end
+    it 'in case of 5 expect buzz' do
+      result = sol.fizzbuzz(5)
+      expect(result).to eql('buzz')
+    end
+    it 'in case of 15 expect fizzbuzz' do 
+      result = sol.fizzbuzz(15)
+      expect(result).to eql('fizzbuzz')
+    end
+    it 'in case of 7 expect 7' do
+      result = sol.fizzbuzz(7)
+      expect(result).to eql(7)
+    end
+  end
 end
